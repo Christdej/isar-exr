@@ -4,16 +4,16 @@ from robot_interface.models.mission.status import MissionStatus, StepStatus
 
 
 class ExrMissionStatus(str, Enum):
-    StartRequested: str = "START_REQUESTED"
-    PauseRequested: str = "PAUSE_REQUESTED"
-    ResumeRequested: str = "RESUME_REQUESTED"
-    Rejected: str = "REJECTED"
-    WakingUp: str = "WAKING_UP"
-    Starting: str = "STARTING"
-    InProgress: str = "IN_PROGRESS"
-    Paused: str = "PAUSED"
-    Completed: str = "COMPLETED"
-    ResetRequested: str = "RESET_REQUESTED"
+    StartRequested = "START_REQUESTED"
+    PauseRequested = "PAUSE_REQUESTED"
+    ResumeRequested = "RESUME_REQUESTED"
+    Rejected = "REJECTED"
+    WakingUp = "WAKING_UP"
+    Starting = "STARTING"
+    InProgress = "IN_PROGRESS"
+    Paused = "PAUSED"
+    Completed = "COMPLETED"
+    ResetRequested = "RESET_REQUESTED"
 
     def to_mission_status(self) -> MissionStatus:
         return {
@@ -32,16 +32,16 @@ class ExrMissionStatus(str, Enum):
 
 
 class ExrStepStatus(str, Enum):
-    StartRequested: str = "START_REQUESTED"
-    PauseRequested: str = "PAUSE_REQUESTED"
-    ResumeRequested: str = "RESUME_REQUESTED"
-    Rejected: str = "REJECTED"
-    WakingUp: str = "WAKING_UP"
-    Starting: str = "STARTING"
-    InProgress: str = "IN_PROGRESS"
-    Paused: str = "PAUSED"
-    Completed: str = "COMPLETED"
-    ResetRequested: str = "RESET_REQUESTED"
+    StartRequested = "START_REQUESTED"
+    PauseRequested = "PAUSE_REQUESTED"
+    ResumeRequested = "RESUME_REQUESTED"
+    Rejected = "REJECTED"
+    WakingUp = "WAKING_UP"
+    Starting = "STARTING"
+    InProgress = "IN_PROGRESS"
+    Paused = "PAUSED"
+    Completed = "COMPLETED"
+    ResetRequested = "RESET_REQUESTED"
 
     def to_step_status(self) -> StepStatus:
         return {

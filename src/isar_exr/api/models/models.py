@@ -1,8 +1,9 @@
 from enum import Enum
 from typing import Optional
-from isar_exr.api.models.enums import ChargerType, ChargingState
 
 from pydantic import BaseModel, Field
+
+from isar_exr.api.models.enums import ChargerType, ChargingState
 
 
 class Point3DInput(BaseModel):
@@ -31,9 +32,9 @@ class Pose3DStampedInput(BaseModel):
 
 
 class PointOfInterestTypeEnum(str, Enum):
-    MANOMETER: str = "MANOMETER"
-    FIRE_EXTINGUISHER: str = "FIRE_EXTINGUISHER"
-    GENERIC: str = "GENERIC"
+    MANOMETER = "MANOMETER"
+    FIRE_EXTINGUISHER = "FIRE_EXTINGUISHER"
+    GENERIC = "GENERIC"
 
 
 class PointOfInterestActionPhotoInput(BaseModel):
@@ -64,16 +65,16 @@ class PointOfInterestByCustomerTag(BaseModel):
 
 
 class RobotTypeEnum(str, Enum):
-    SPOT: str = "SPOT"
-    EXR2: str = "EXR2"
-    ROVER: str = "ROVER"
-    DJI_DRONE: str = "DJI_DRONE"
+    SPOT = "SPOT"
+    EXR2 = "EXR2"
+    ROVER = "ROVER"
+    DJI_DRONE = "DJI_DRONE"
 
 
 class PointOfInterestProducerTypeEnum(str, Enum):
-    ROBOT_TEACHING: str = "ROBOT_TEACHING"
-    VISUAL_MARKER: str = "VISUAL_MARKER"
-    MANUAL_IMPORT: str = "MANUAL_IMPORT"
+    ROBOT_TEACHING = "ROBOT_TEACHING"
+    VISUAL_MARKER = "VISUAL_MARKER"
+    MANUAL_IMPORT = "MANUAL_IMPORT"
 
 
 class PointOfInterestProducerInput(BaseModel):
