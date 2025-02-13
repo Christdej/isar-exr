@@ -1,5 +1,7 @@
 # isar-exr
 
+**Repo currently not maintained, not working with newest version of ISAR**
+
 Integration and Supervisory control of Autonomous ground Robots - exr
 
 The abbreviation "exr" stands for ExRobotics, the maker of the [ExR-2](https://exrobotics.global/robots/exr-2) robot, which this package is intended for.
